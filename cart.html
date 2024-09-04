@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="page-name" content="Cart">
+  <title>Shopping Cart</title>
+
+ 
+  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="cart.css">
+
+   <!--google fonts -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <!-- Include Toastr CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+<!-- Include Toastr JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+</head>
+
+<body>
+
+  
+
+ <div class="small-container cart-page">
+   <!--Empty Cart -->
+  <div id="empty-cart-message" >
+      <img src="images/shopping.png">
+      <div class="empty-card-content">
+        <h3>عربة التسوق فارغة </h3>
+        <p>عربة التسوق الخاصة بك فارغة، ولكن لا يزال هناك الكثير لاكتشافه! لدينا مجموعة متنوعة من المنتجات التي تنتظرك. ابدأ في التسوق الآن وأضف منتجاتك المفضلة للعربة.</p>
+       <a href="index.html"><button class="button-34" role="button">تسوق الان</button></a>
+      </div>
+  </div>
+  <!--Cart details -->
+  <table id="cart-table">
+      <!-- Cart items will be inserted here by JavaScript -->
+  </table>
+  <div id="totalprice-hide" class="total-price">
+      <table>
+          <tr>
+              <td>السعر الكلي</td>
+              <td id="total-price">0</td>
+          </tr>
+      </table>
+  </div>
+  <button id="orderbtn" onclick="sendOrderWhatsApp()">
+    <span>
+      اطلب الان عبر واتساب
+    </span>
+  </button>
+  
+</div>
+  <!-- <script src="cart.js"></script> -->
+  <script src="bundle.js" type="module"></script>
+  <!--Notificatioins-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+</body>
+
+</html>

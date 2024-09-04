@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="page-name" content="All">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+ <!--google fonts -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+ <!-- Include Toastr CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+<!-- Include Toastr JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <title>جميع المنتجات</title>
+</head>
+<body>
+    <!--Select-->
+    <div class="select-container">
+        <select class="select-box" id="productSelector">
+          <option value="second">جميع المنتجات بالاحدث</option>
+          <option value="first">جميع المنتجات الاكثر مبيعا</option>
+        </select>
+        <div class="icon-container">
+          <i class="fa-caret-down fa-solid"></i>
+        </div>
+      </div>
+
+    <!--Display peoducts-->
+    <section class="product-card">
+        <div class="products-area" id="products-area">
+          <!-- Product cards will be dynamically inserted here -->
+        </div>
+      </section>
+    <script src="bundle.js" type="module"></script>
+</body>
+</html>
