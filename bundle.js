@@ -175,12 +175,13 @@ function filterAndDisplayProducts() {
 
   if (selectedOption === 'second') {
     console.log('latest');
-      filteredProducts = productsArray.slice(-5); // Last 5 items
+      filteredProducts = productsArray.slice(-10); // Last 5 items
       
   } else if (selectedOption === 'first') {
     console.log('dndn');
       filteredProducts = productsArray.filter(product => product.bestSeller);
   }
+
   filteredProducts.reverse();
   displayProducts(filteredProducts);
 }
